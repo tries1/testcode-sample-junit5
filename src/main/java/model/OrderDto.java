@@ -1,7 +1,6 @@
-package dto;
+package model;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import lombok.Data;
 
@@ -11,14 +10,20 @@ public class OrderDto {
     private Long id;
 
     //주문 수량
-    private Long amount;
+    private Integer amount;
 
     //주문 상태
-    private Long status;
+    private OrderStatus status;
+
+    //주문자 고객 ID
+    private Long userId;
 
     //주문 상품 목록
-    private List<ItemDto> itemList;
+    private ItemDto item;
 
     //주문일
     private LocalDateTime orderDate;
+
+    //취소일
+    private LocalDateTime orderCancelDate;
 }

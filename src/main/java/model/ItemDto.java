@@ -1,4 +1,4 @@
-package dto;
+package model;
 
 import lombok.Data;
 
@@ -12,4 +12,5 @@ public class ItemDto {
 
     //상품가격
     private Integer price;
+
 }
